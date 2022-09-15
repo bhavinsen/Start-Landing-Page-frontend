@@ -1,0 +1,191 @@
+.main-banner{
+    .header-hero {
+        height: 850px;
+        position: relative;
+        background-image: url(../../Assets/Images/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -120px;
+        background-position-x: center;
+        @media (max-width:1487px){
+            background-position-y: unset;
+        }
+    }
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .header-hero {
+            height: 700px;
+        }
+    }
+    @media(max-width:767px) {
+        .header-hero {
+            height: 650px;
+        }
+    }
+    .header-hero::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(232, 237, 255, 0.9), rgba(239, 254, 255, 0.9) 50%, rgba(254, 255, 244, 0.3) 68%, rgba(255, 255, 255, 0.12))
+    }
+    .header-hero .header-content {
+        padding-top: 195px;
+        position: relative;
+        z-index: 9;
+    }
+    .rounded-buttons .rounded-three:hover {
+        background-position: right center;
+    }
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .header-hero .header-content {
+            padding-top: 130px
+        }
+    }
+    @media(max-width:767px) {
+        .header-hero .header-content {
+            padding-top: 120px
+        }
+    }
+    .header-hero .header-content .header-title {
+        font-size: 44px;
+        line-height: 55px;
+        color: #121212;
+        font-weight: 600
+    }
+    @media(max-width:767px) {
+        .header-hero .header-content .header-title {
+            font-size: 30px;
+            line-height: 40px
+        }
+    }
+    .header-hero .header-content .text {
+        font-size: 20px;
+        line-height: 32px;
+        color: #6c6c6c;
+        margin-top: 16px
+    }
+    @media(max-width:767px) {
+        .header-hero .header-content .text {
+            font-size: 16px;
+            line-height: 24px
+        }
+    }
+    .header-hero .header-content .header-btn {
+        margin-top: 22px
+    }
+    .header-hero .header-content .header-btn li {
+        display: inline-block;
+        margin: 10px 10px 0
+    }
+    .header-hero .header-content .header-btn li a.main-btn {
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: #fff;
+        -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+        -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+        border: 0;
+        line-height: 50px
+    }
+    .rounded-buttons .rounded-three {
+        overflow: hidden;
+        line-height: 52px;
+        background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+        background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+        background: linear-gradient(to right, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+        background-size: 200% auto;
+        color: #fff;
+        border: 0
+    }
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .rounded-buttons .rounded-three {
+            line-height: 44px
+        }
+    }
+    @media(max-width:767px) {
+        .rounded-buttons .rounded-three {
+            line-height: 44px
+        }
+    }
+    .main-btn {
+        text-decoration: unset;
+        display: inline-block;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 2px solid transparent;
+        padding: 0 32px;
+        font-size: 16px;
+        line-height: 46px;
+        color: #0067f4;
+        cursor: pointer;
+        z-index: 5;
+        transition: all .4s ease-out 0s;
+        position: relative;
+        text-transform: uppercase
+    }
+    .header-hero .header-content .header-btn li a.main-btn svg {
+        margin-left: 8px
+    }
+    .header-hero .header-content .header-btn li a.main-btn.rounded-four {
+        padding: 0 32px
+    }
+    .header-hero .header-content .header-btn li a.main-btn.rounded-four:hover {
+        -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .16);
+        -moz-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .16);
+        box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .16);
+        color: #0067f4
+    }
+    .header-hero .header-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%
+    }
+    .header-hero .header-shape img {
+        width: 100%
+    }
+    .rounded-buttons .rounded-four:hover svg {
+        animation: iconTranslateY .5s forwards;
+    }
+    @keyframes iconTranslateY {
+        49% {
+            -webkit-transform: translateY(100%)
+        }
+    
+        50% {
+            opacity: 0;
+            -webkit-transform: translateY(-100%)
+        }
+    
+        51% {
+            opacity: 1
+        }
+    }
+    .back-to-top {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #0067f4;
+        bottom: 10px;
+        right: 20px;
+        display: block !important;
+        z-index: 999;
+        color: #fff;
+        font-size: 20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+        display: none;
+        z-index: 100;
+    }
+    .back-to-top:hover {
+        background-color: #005ad5;
+        color: #fff
+    }
+}

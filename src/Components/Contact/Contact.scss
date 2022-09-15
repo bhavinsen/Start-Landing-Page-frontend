@@ -1,0 +1,75 @@
+.maincontact{
+    padding: 120px 0;
+    @media(max-width:1024px){
+        padding: 40px 0;
+    }
+    .contact{
+        text-align: center;
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+            color: #121212;
+            @media(max-width:767px){
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 16px;
+            color: #6c6c6c;
+            margin-top: 24px;
+            font-weight: 400;
+            max-width: 480px;
+            margin: auto;
+        }
+    }
+    .form{
+        max-width: 770px;
+        margin: auto;
+        .name{
+            margin: 24px 0;
+        }
+        .number{
+            margin-bottom: 24px;
+        }
+        input{
+            width: 100%;
+            height: 56px;
+            border: 1px solid #cbced1;
+            border-radius: 5px;
+            padding: 0 25px;
+            font-size: 16px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+        }
+        textarea{
+            &:focus{
+                box-shadow: none;
+                border-color:  #ced4da;
+            }
+        }
+        .subscribe{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            button{
+                background-color: #0067f4;
+                font-size: 16px;
+                font-weight: 700;
+                border-radius: 50px;
+                height: 48px;
+                padding: 0 32px;
+                @media(max-width:767px){
+                    font-size: 14px;
+                    height: 45px;
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
+}
